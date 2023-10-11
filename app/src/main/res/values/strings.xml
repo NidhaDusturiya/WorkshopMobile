@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KotlinUts</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profil">Profile</string>
+    <string name="title_skill">Skill</string>
+
+    <string name="java">Java</string>
+    <string name="cpp">C++</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="iv_item_description">Represents an image view in the
+        item
+    </string>
+</resources>
