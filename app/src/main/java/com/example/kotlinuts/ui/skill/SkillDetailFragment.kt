@@ -35,10 +35,21 @@ class SkillDetailFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         if (arguments != null) {
             val name = arguments?.getString(EXTRA_NAME)
-            binding.textSkillDetail.text = name
 
+            val skillImageMap = mapOf(
+                "Java" to com.example.kotlinuts.R.drawable.java,
+                "Python" to com.example.kotlinuts.R.drawable.python,
+                "Kotlin" to com.example.kotlinuts.R.drawable.kotlin,
+                "PHP" to com.example.kotlinuts.R.drawable.php
+            )
+            val imageId = skillImageMap[name]
+            if (imageId != null) {
+                binding.imgItemPhoto.setImageResource(imageId)
+            }
+            binding.textSkillDetail.text = name
         }
     }
 
